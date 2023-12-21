@@ -1,0 +1,287 @@
+#hero img {
+    width: 200px;
+    border-radius: 50px;
+    float: left;
+}
+#hero {
+    background-image: url(assets/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 58%;
+}
+#hero h1 {
+    font-weight: 600;
+}
+#hero h2 {
+    color: black;
+}
+.scroll-down-link {
+    background-color: black;
+    border-radius: 20px;
+}
+.scroll-down-link:hover {
+    box-shadow: 0 0 50px white;
+}
+.em {
+    visibility: hidden;
+}
+h2 em {
+    color: red;
+    visibility: visible;
+}
+h3 {
+    font-size: large;
+    color: gold;
+}
+
+#video {
+    width:300px;
+    margin: 10px;
+}
+a {
+    color: blue;
+}
+
+.container img {
+    width: 8px;
+    float: left;
+    border-radius: 10px
+}
+#header {
+    background-color: goldenrod;
+    margin: 20px 0 20px 0;
+    height: auto;
+    width: 100%;
+    border: 1px 1 #ddd;
+}
+
+#header h2 {
+    font-size: x-large;
+}
+
+h4 a {
+    color: white;
+}
+h1 {
+    font-size: x-large;
+}
+
+a img {
+    width: 250px;
+    margin: 15px;
+}
+
+#header2 h3 {
+    color: white;
+}
+#header2 {
+    background-color: goldenrod;
+    margin: 20px 0 20px 0;
+    height: 500px;
+    width: 1600px;
+    border: 1px 1 #ddd;
+    margin-top: 120px;
+}
+
+#header2 a {
+    color: blue;
+}
+@font-face {
+    font-family: Tittle;
+    src: url(Font.ttf);
+  }
+h1 span {
+    font-family: Tittle;
+  }
+#lb {
+    height: 45px;
+    width: 30%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right top, goldenrod, gold, lightgray, gold, goldenrod);
+    background-size: 100%;
+    color: white;
+    font-style: bolt;
+    border-radius: 4px;
+    margin: 5px;
+}
+#lb:hover {
+    background: linear-gradient(to right top, lightgray, gold, goldenrod, gold, lightgray);
+    transition: 0.5s;
+}
+h5 {
+    font-size: larger;
+    color: red;
+}
+#Like {
+    background: linear-gradient(to right top, #a1a1a1, #84b4d7, #00d1e3, #00e7a2, #a8eb12);
+    margin-top: 5px;
+}
+h4 {
+    font-size: 15px;
+    color: red;
+}
+#Code {
+    background-color: black;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+}
+#foot {
+    color: white;
+    background-color: rgb(54, 54, 54);
+    border: double;
+    border-color: black;
+    margin-top: -1.5%;
+    font-size: x-large;
+}
+@media screen and (max-width: 600px) {
+    .scroll-down-link {
+        background-color: black;
+        border-radius: 20px;
+        margin-left: 40%;
+    }
+    .about-wrapper__image {
+        width: 280px;
+    }
+    #about {
+        width: 100%;
+    }
+    #hero {
+        width: 100%;
+    }
+    #hero h2 {
+        background: linear-gradient(to right top, rgba(255, 255, 255, 0.603), rgba(255, 255, 255, 0.418), rgba(255, 255, 255, 0.603));
+        border: solid 4px rgba(218, 165, 32, 0.808);
+    }
+    #Like {
+        width: 100%;
+    }
+    #header {
+        width: 100%;
+    }
+    #header2 {
+        width: 100%;
+    }
+    #foot {
+    color: white;
+    background-color: rgb(54, 54, 54);
+    border: double;
+    border-color: black;
+    margin-top: -5.5%;
+    font-size: 20px;
+}
+}
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, white, lightgray, gray, black);
+}
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: darkred;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*Scrollbar*/
+
+/* Button Hover */
+.btn{
+    position: absolute;
+    left: 50%;
+    top: 166%;
+    background: #fff;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 0.25em;
+    color: goldenrod;
+    background: goldenrod;
+    box-shadow: 0 0 35px goldenrod;
+}
+.btn:before{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+.btn i::before{
+    content: "";
+    position: absolute;
+    bottom: 99%;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: goldenrod;
+    transform: translatex(-50%) skewx(325deg);
+    transition: 0.5s;
+}
+.btn:hover i::before{
+    width: 120px;
+    left: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .btn{
+        position: absolute;
+        left: 35%;
+        top: 205%;
+        background: #fff;
+        color: #fff;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-style: normal;
+        padding: 10px 10px;
+        transition: 0.5s;
+        visibility: hidden;
+    }
+    .btn:hover{
+        letter-spacing: 0.25em;
+        color: goldenrod;
+        background: goldenrod;
+        box-shadow: 0 0 35px goldenrod;
+    }
+    .btn:before{
+        content: "";
+        position: absolute;
+        inset: 2px;
+        background: #27282c;
+    }
+    .btn span {
+        position: relative;
+        z-index: 1;
+    }
+    .btn i::before{
+        content: "";
+        position: absolute;
+        bottom: 99%;
+        left: 80%;
+        width: 10px;
+        height: 4px;
+        background: goldenrod;
+        transform: translatex(-50%) skewx(325deg);
+        transition: 0.5s;
+    }
+    .btn:hover i::before{
+        width: 120px;
+        left: 50%;
+    }
+}

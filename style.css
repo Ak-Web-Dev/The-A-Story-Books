@@ -48,13 +48,16 @@ a {
     border-radius: 10px
 }
 #header {
-    background-color: goldenrod;
+    background-image: url(assets/hbd.png);
     margin: 20px 0 20px 0;
     height: auto;
     width: 100%;
     border: 1px 1 #ddd;
+    background-attachment: fixed;
 }
-
+#header h1 {
+    color: black;
+}
 #header h2 {
     font-size: x-large;
 }
@@ -95,11 +98,11 @@ h1 span {
   }
 #lb {
     height: 45px;
-    width: 30%;
+    width: 10%;
     cursor: pointer;
     border: none;
     outline: none;
-    background: linear-gradient(to right top, goldenrod, gold, lightgray, gold, goldenrod);
+    background: goldenrod;
     background-size: 100%;
     color: white;
     font-style: bolt;
@@ -107,8 +110,11 @@ h1 span {
     margin: 5px;
 }
 #lb:hover {
-    background: linear-gradient(to right top, lightgray, gold, goldenrod, gold, lightgray);
+    width: 12%;
+    letter-spacing: 0.1em;
+    background-color: gold;
     transition: 0.5s;
+    box-shadow: 0 0 35px goldenrod;
 }
 h5 {
     font-size: larger;
@@ -182,11 +188,11 @@ h4 {
     background: linear-gradient(to top, white, lightgray, gray, black);
 }
 ::-webkit-scrollbar-thumb {
-    background: red;
+    background: goldenrod;
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: darkred;
+    background: gold;
     cursor: pointer;
     transition: 0.5s;
 }

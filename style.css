@@ -245,6 +245,26 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
+    #lb {
+    height: 45px;
+    width: 15%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: goldenrod;
+    background-size: 100%;
+    color: white;
+    font-style: bolt;
+    border-radius: 4px;
+    margin: 5px;
+}
+#lb:hover {
+    width: 18%;
+    letter-spacing: 0.1em;
+    background-color: gold;
+    transition: 0.5s;
+    box-shadow: 0 0 35px goldenrod;
+}
     .btn{
         position: absolute;
         left: 35%;
